@@ -9,6 +9,8 @@
     import { Button } from "$lib/components/ui/button";
 	import TechStack from "./TechStack.svelte";
     import * as AlertDialog from "$lib/components/ui/alert-dialog";
+    import * as Drawer from "$lib/components/ui/drawer";
+	import Projects from "./Projects.svelte";
 
 </script>
 
@@ -32,7 +34,6 @@
         </div>
 
         
-
     </div>
     
     
@@ -41,7 +42,36 @@
 
         <span title="Click to view projects that i had made." class="flex items-center truncate rounded-lg hover:bg-[#ffffff31]">
 
-            <AlertDialog.Root>
+            <Drawer.Root>
+                <Drawer.Trigger asChild let:builder>
+                    <Button builders={[builder]} variant="outline" class="border-0 p-2 rounded-lg hover:bg-[#ffffff31] ">
+                        <img src={folder} alt="folder" class="inline-block w-5 h-5" />
+                        <div class="transition-all hover:text-red-500 underline text-blue-500 font-bold">Created Projects</div>
+                    </Button>
+                </Drawer.Trigger>
+
+                <Drawer.Content>
+                    <div class="mx-auto w-full sm:max-w-xl">
+                        <Drawer.Header>
+                            <Drawer.Title class="text-center">Created Projects ❤️❤️</Drawer.Title>
+                            <Drawer.Description></Drawer.Description>
+
+                            
+                                <Projects />
+                            
+                        </Drawer.Header>
+                        
+                        <Drawer.Footer>
+                            
+                            
+                        </Drawer.Footer>
+                    </div>
+
+                    
+                </Drawer.Content>
+            </Drawer.Root>
+
+            <!-- <AlertDialog.Root>
                 <AlertDialog.Trigger asChild let:builder>
 
                     <Button builders={[builder]} variant="outline" class="border-0 p-2 rounded-lg hover:bg-[#ffffff31]">
@@ -61,14 +91,14 @@
                     <AlertDialog.Action>Continue Baby!</AlertDialog.Action>
                     </AlertDialog.Footer>
                 </AlertDialog.Content>
-            </AlertDialog.Root>
+            </AlertDialog.Root> -->
 
         </span>
         
 
         <span title="Click to view my linkIn account." class="flex items-center truncate p-2 rounded-lg hover:bg-[#ffffff31]">
             <img src={linkIn} alt="folder" class="inline-block w-5 h-5" />
-            <a href="https://www.linkedin.com/in/mike-john-eviota-4443a6288/" target="_blank" class="transition-all hover:text-red-500 underline text-blue-500 font-bold">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/mike-john-eviota-4443a6288/" target="_blank" class="text-sm transition-all hover:text-red-500 underline text-blue-500 font-bold">LinkedIn</a>
         </span>
 
         <span title="Click to view my github accounts." class="flex items-center truncate">
@@ -108,12 +138,12 @@
 
         <span title="Click to view my facebook account." class="flex items-center truncate p-2 rounded-lg hover:bg-[#ffffff31]">
             <img src={fb} alt="folder" class="inline-block w-5 h-5" />
-            <a href="https://www.facebook.com/mike.eviota" target="_blank" class="transition-all hover:text-red-500 underline text-blue-500 font-bold">Facebook</a>
+            <a href="https://www.facebook.com/mike.eviota" target="_blank" class="text-sm transition-all hover:text-red-500 underline text-blue-500 font-bold">Facebook</a>
         </span>
 
         <span title="Click to view my youtube account." class="flex items-center truncate p-2 rounded-lg hover:bg-[#ffffff31]">
             <img src={yt} alt="folder" class="inline-block w-5 h-5" />
-            <a href="https://www.youtube.com/@mikeSharesCode" target="_blank" class="transition-all hover:text-red-500 underline text-blue-500 font-bold">Youtube Channel</a>
+            <a href="https://www.youtube.com/@mikeSharesCode" target="_blank" class="text-sm transition-all hover:text-red-500 underline text-blue-500 font-bold">Youtube Channel</a>
         </span>
 
     </div>
