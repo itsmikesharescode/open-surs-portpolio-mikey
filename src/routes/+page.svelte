@@ -10,7 +10,8 @@
 	import TechStack from "./TechStack.svelte";
     import * as AlertDialog from "$lib/components/ui/alert-dialog";
     import * as Drawer from "$lib/components/ui/drawer";
-	import Projects from "./Projects.svelte";
+
+    import { projects } from "$lib/projects";
 
 </script>
 
@@ -56,8 +57,14 @@
                             <Drawer.Title class="text-center">Created Projects ❤️❤️</Drawer.Title>
                             <Drawer.Description></Drawer.Description>
 
-                            
-                                <Projects />
+                            <div class="flex flex-col justify-center items-cell">
+                                {#each $projects as project }
+                                    <Button variant="outline" class="border-0 p-2 rounded-lg hover:bg-[#ffffff31] mx-auto">
+                                        <img src={folder} alt="folder" class="inline-block w-5 h-5" />
+                                        <a title="Click to view details of this project {project.title}" href={project.url} target="_blank" class="transition-all hover:text-red-500 underline text-blue-500 font-bold">{project.title}</a>
+                                    </Button>
+                                {/each}
+                            </div>
                             
                         </Drawer.Header>
                         
