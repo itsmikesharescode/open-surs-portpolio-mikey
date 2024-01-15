@@ -59,7 +59,7 @@
 
                             <div class="flex flex-col justify-center items-cell">
                                 {#each $projects as project }
-                                    <Button variant="outline" class="border-0 p-2 rounded-lg hover:bg-[#ffffff31] mx-auto">
+                                    <Button variant="outline" class="border-0 p-2 rounded-lg hover:bg-[#ffffff31] mx-auto flex items-center">
                                         <img src={folder} alt="folder" class="inline-block w-5 h-5" />
                                         <a title="Click to view details of this project {project.title}" href={project.url} target="_blank" class="transition-all hover:text-red-500 underline text-blue-500 font-bold">{project.title}</a>
                                     </Button>

@@ -15,6 +15,11 @@ export const projects = writable([
     {
         title: "Simple learning management system",
         url: "https://github.com/itsmikesharescode/simple-learning-management-system"
+    },
+
+    {
+        title: "My Internship Project",
+        url: "https://github.com/itsmikesharescode/my-internship-project",
     }
 ]);
 
