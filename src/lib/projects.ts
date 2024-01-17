@@ -3,23 +3,27 @@ import {writable} from "svelte/store";
 
 export const projects = writable([
     {
-        title: "Simple Enrollment System",
-        url: "https://github.com/itsmikesharescode/simple-enrollment-system"
+        title: "Enrollment System",
+        ghURL: "https://github.com/itsmikesharescode/shad-cn-enrollment-system-port",
+        officialURL: "https://shad-cn-enrollment-system-port.vercel.app/",
     },
 
     {
-        title: "Simple Voting System",
-        url: "https://github.com/itsmikesharescode/simple-voting-system-sql"
+        title: "Voting System",
+        ghURL: "https://github.com/itsmikesharescode/simple-voting-system-sql",
+        officialURL: "https://simple-voting-system-seven.vercel.app/"
     },
 
     {
-        title: "Simple learning management system",
-        url: "https://github.com/itsmikesharescode/simple-learning-management-system"
+        title: "Learning Management System",
+        ghURL: "https://github.com/itsmikesharescode/simple-learning-management-system",
+        officialURL: "https://simple-learning-management-system.vercel.app/"
     },
 
     {
         title: "My Internship Project",
-        url: "https://github.com/itsmikesharescode/my-internship-project",
+        ghURL: "https://github.com/itsmikesharescode/my-internship-project",
+        officialURL: "https://my-internship-project-one.vercel.app/"
     }
 ]);
 

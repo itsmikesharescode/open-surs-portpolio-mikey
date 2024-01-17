@@ -9,9 +9,22 @@
     import { Button } from "$lib/components/ui/button";
 	import TechStack from "./TechStack.svelte";
     import * as AlertDialog from "$lib/components/ui/alert-dialog";
+    import * as Card from "$lib/components/ui/card";
     import * as Drawer from "$lib/components/ui/drawer";
 
+    import js from "$lib/Images/mysvgs/Stacks/js.svg";
+    import svelte from "$lib/Images/mysvgs/Stacks/svelte.svg";
+    import react from "$lib/Images/mysvgs/Stacks/react.svg";
+    import go from "$lib/Images/mysvgs/Stacks/Go.svg";
+    import tw from "$lib/Images/mysvgs/Stacks/tailwind.svg";
+    import sb from "$lib/Images/mysvgs/Stacks/supabase.svg";
+    import fireb from "$lib/Images/mysvgs/Stacks/firebase.svg";
+    import ts from "$lib/Images/mysvgs/Stacks/ts.svg";
+    import vercel from "$lib/Images/mysvgs/vercel.svg";
+    import vercelWhite from "$lib/Images/mysvgs/vercelWhite.svg";
     import { projects } from "$lib/projects";
+	import { darkMode } from "$lib";
+	import { onMount } from "svelte";
 
 </script>
 
@@ -37,8 +50,6 @@
         
     </div>
     
-    
-    
     <div class="sm:max-w-[80dvw] mx-auto mt-5 flex flex-col w-full justify-center items-center lg:flex-row lg:justify-end gap-4">
 
         <span title="Click to view projects that i had made." class="flex items-center truncate rounded-lg hover:bg-[#ffffff31]">
@@ -52,27 +63,57 @@
                 </Drawer.Trigger>
 
                 <Drawer.Content>
-                    <div class="mx-auto w-full sm:max-w-xl">
-                        <Drawer.Header>
-                            <Drawer.Title class="text-center">Created Projects ❤️❤️</Drawer.Title>
-                            <Drawer.Description></Drawer.Description>
+                   
+                    <Drawer.Header class="">
+                        <Drawer.Title class="text-center">Created Projects ❤️❤️</Drawer.Title>
+                    
+                        <div class="overflow-auto max-h-[70dvh] flex flex-col gap-4 lg:flex-row mt-5 lg:flex-wrap lg:justify-center">
+                            {#each $projects as project }
+                            <Card.Root class="w-full lg:w-[25%] shadow-lg">
+                                <Card.Header class="text-left">
+                                    <Card.Title>{project.title}</Card.Title>
+                                    <Card.Description>Read full details at github link.</Card.Description>
+                                </Card.Header>
+                                
+                                <Card.Content class="flex flex-col gap-2">
+                                    
+                                    <div class="flex gap-2 break-words">
+                                        <p class="text-sm font-bold">Official Live Website: </p>
+                                        <a href={project.officialURL} target="_blank" class="transition-all text-blue-600 underline hover:text-red-600 text-sm">Click here</a>
+                                    </div>
 
-                            <div class="flex flex-col justify-center items-cell">
-                                {#each $projects as project }
-                                    <Button variant="outline" class="border-0 p-2 rounded-lg hover:bg-[#ffffff31] mx-auto flex items-center">
-                                        <img src={folder} alt="folder" class="inline-block w-5 h-5" />
-                                        <a title="Click to view details of this project {project.title}" href={project.url} target="_blank" class="transition-all hover:text-red-500 underline text-blue-500 font-bold">{project.title}</a>
-                                    </Button>
-                                {/each}
-                            </div>
-                            
-                        </Drawer.Header>
+                                    <div class="flex gap-2 break-words">
+                                        <p class="text-sm font-bold">Github Link: </p>
+                                        <a href={project.ghURL} target="_blank" class="transition-all text-blue-600 underline hover:text-red-600 text-sm">Click here</a>
+                                    </div>
+                                </Card.Content>
+
+                                <Card.Footer>
+                                    <div class="flex gap-2 justify-end w-full">
+                                        <img src={svelte} class="w-5" alt="" />
+                                        <img src={tw} class="w-5" alt="" />
+                                        <img src={sb} class="w-5" alt="" />
+
+                                        {#if $darkMode}
+                                            <img src={vercel} class="w-10" alt="" />
+                                        {:else}
+                                            <img src={vercelWhite} class="w-10" alt="" />
+                                        {/if}
+                                        
+                                    </div>
+                                </Card.Footer>
+                            </Card.Root>
+                        {/each}
+                        </div>
                         
-                        <Drawer.Footer>
-                            
-                            
-                        </Drawer.Footer>
-                    </div>
+
+                    </Drawer.Header>
+                    
+                    <Drawer.Footer>
+                        
+                        
+                    </Drawer.Footer>
+                  
 
                     
                 </Drawer.Content>
