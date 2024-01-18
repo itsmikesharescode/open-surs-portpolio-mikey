@@ -19,12 +19,12 @@
     </p>
     
     <p class="text-sm font-bold mt-10 text-center">Click to view details:</p>
-    <div class="flex flex-wrap justify-center">
+    <div class="flex flex-wrap justify-center gap-2 mt-5">
 
         
         <Popover.Root portal={null}>
             <Popover.Trigger asChild let:builder>
-                <Button builders={[builder]} class="py-8 px-2 bg-[#FFFFFF50] dark:bg-[#00000050]">
+                <Button builders={[builder]} class="py-8 px-2 bg-[#FFFFFF50] dark:bg-[#00000000]">
                     <img title="Click, to view details." src={js} alt="js" class="inline-block w-14 transition-all hover:scale-110 active:scale-95" />
                 </Button>
             </Popover.Trigger>
