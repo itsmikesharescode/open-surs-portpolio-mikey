@@ -37,7 +37,7 @@
         </div>
     
         <div class="flex flex-col gap-2">
-            <h1 class="text-[1.5rem] text-center sm:text-left lg:text-[3rem] font-bold">Hi! I'm Mike John.</h1>
+            <h1 class="text-[1.5rem] text-center sm:text-left lg:text-[3rem] font-bold text-red-700">Hi there, I'm Mike John. a Junior Web Developer</h1>
             <p class="text-sm text-center sm:text-left sm:text-base">
                 As a passionate and curious individual, I have always been fascinated by the logic behind computers. This interest has led me to develop a strong foundation in web development, and I am constantly seeking to expand my knowledge and skills in this field. With my enthusiasm and dedication, I am confident that I can make a valuable contribution to any team.
             </p>
