@@ -5,6 +5,7 @@
     import gh from "$lib/Images/mysvgs/gh.svg";
     import fb from "$lib/Images/mysvgs/fb.svg";
     import yt from "$lib/Images/mysvgs/yt.svg";
+    import word from "$lib/Images/mysvgs/word.svg";
     import * as DropdownMenu from "$lib/components/ui/dropdown-menu";
     import { Button } from "$lib/components/ui/button";
 	import TechStack from "./TechStack.svelte";
@@ -52,6 +53,7 @@
     
     <div class="sm:max-w-[80dvw] mx-auto mt-5 flex flex-col w-full justify-center items-center lg:flex-row lg:justify-end gap-4">
 
+        
         <span title="Click to view projects that i had made." class="flex items-center truncate rounded-lg hover:bg-[#ffffff31]">
 
             <Drawer.Root>
@@ -149,6 +151,7 @@
             <a href="https://www.linkedin.com/in/mike-john-eviota-4443a6288/" target="_blank" class="text-sm transition-all hover:text-red-500 underline text-blue-500 font-bold">LinkedIn</a>
         </span>
 
+        
         <span title="Click to view my github accounts." class="flex items-center truncate">
 
 
@@ -194,6 +197,10 @@
             <a href="https://www.youtube.com/@mikeSharesCode" target="_blank" class="text-sm transition-all hover:text-red-500 underline text-blue-500 font-bold">Youtube Channel</a>
         </span>
 
+        <span title="Click to view my linkIn account." class="flex items-center truncate p-2 rounded-lg hover:bg-[#ffffff31]">
+            <img src={word} alt="folder" class="inline-block w-5 h-5" />
+            <a href="/static/Eviota_Resume.docx" target="_blank" class="text-sm transition-all hover:text-red-500 underline text-blue-500 font-bold">Download my CV</a>
+        </span>
     </div>
 
 
