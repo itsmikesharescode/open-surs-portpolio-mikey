@@ -199,7 +199,7 @@
 
         <span title="Click to view my linkIn account." class="flex items-center truncate p-2 rounded-lg hover:bg-[#ffffff31]">
             <img src={word} alt="folder" class="inline-block w-5 h-5" />
-            <a href="/static/Eviota_Resume.docx" target="_blank" class="text-sm transition-all hover:text-red-500 underline text-blue-500 font-bold">Download my CV</a>
+            <a href="/static/Eviota_Resume.docx" download class="text-sm transition-all hover:text-red-500 underline text-blue-500 font-bold">Download my CV</a>
         </span>
     </div>
 
