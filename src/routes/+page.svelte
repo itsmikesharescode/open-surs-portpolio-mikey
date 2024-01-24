@@ -116,32 +116,8 @@
                         
                     </Drawer.Footer>
                   
-
-                    
                 </Drawer.Content>
             </Drawer.Root>
-
-            <!-- <AlertDialog.Root>
-                <AlertDialog.Trigger asChild let:builder>
-
-                    <Button builders={[builder]} variant="outline" class="border-0 p-2 rounded-lg hover:bg-[#ffffff31]">
-                        <img src={folder} alt="folder" class="inline-block w-5 h-5" />
-                        <a href="/" class="transition-all hover:text-red-500 underline text-blue-500 font-bold">Created Projects</a>
-                    </Button>
-
-                </AlertDialog.Trigger>
-                <AlertDialog.Content class="shadow-sm shadow-black dark:shadow-white">
-                    <AlertDialog.Header>
-                    <AlertDialog.Title>Creator is busy doing capstone shits!</AlertDialog.Title>
-                    <AlertDialog.Description class="text-black dark:text-slate-400">
-                        This functionality will be available soon, featuring a cringe collection of capstone projects that I've developed and made open source!
-                    </AlertDialog.Description>
-                    </AlertDialog.Header>
-                    <AlertDialog.Footer>
-                    <AlertDialog.Action>Continue Baby!</AlertDialog.Action>
-                    </AlertDialog.Footer>
-                </AlertDialog.Content>
-            </AlertDialog.Root> -->
 
         </span>
         

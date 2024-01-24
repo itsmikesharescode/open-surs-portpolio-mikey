@@ -9,9 +9,9 @@ export const projects = writable([
     },
 
     {
-        title: "Voting System",
-        ghURL: "https://github.com/itsmikesharescode/simple-voting-system-sql",
-        officialURL: "https://simple-voting-system-seven.vercel.app/"
+        title: "Dynamic Voting System",
+        ghURL: "https://github.com/itsmikesharescode/shad-cn-voting-system-port",
+        officialURL: "https://voting-system-port.vercel.app/"
     },
 
     {
