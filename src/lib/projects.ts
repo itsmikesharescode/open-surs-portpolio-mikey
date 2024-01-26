@@ -24,6 +24,12 @@ export const projects = writable([
         title: "My Internship Project",
         ghURL: "https://github.com/itsmikesharescode/my-internship-project",
         officialURL: "https://my-internship-project-one.vercel.app/"
+    },
+
+    {
+        title: "Mikey Chat App",
+        ghURL: "https://github.com/itsmikesharescode/fullstack-chat-app",
+        officialURL: "https://mike-chat-app.vercel.app/"
     }
 ]);
 
