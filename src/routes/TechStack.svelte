@@ -14,7 +14,7 @@
 
 <div class="sm:max-w-[80dvw] mx-auto mt-[10dvh] w-full">
     <h2 class="text-[1.5rem] font-bold text-center sm:text-left">The technology I use?</h2>
-    <p class="text-center sm:text-left text-sm mt-2">
+    <p class="text-center sm:text-left text-sm sm:text-xl mt-2">
         Focused on <b class="text-red-700 dark:text-red-500">SvelteKit</b>, <b class="text-red-700 dark:text-red-500">Tailwind CSS</b>, <b class="text-red-700 dark:text-red-500">Supabase</b>, and <b class="text-red-700 dark:text-red-500">Firebase9</b>, I excel in crafting efficient and visually appealing web applications. Bonus proficiency in <b class="text-red-700 dark:text-red-500">ReactJS</b> and <b class="text-red-700 dark:text-red-500">Go lang</b> enhances my versatility in development.
     </p>
     
